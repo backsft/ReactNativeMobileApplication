@@ -19,11 +19,22 @@ npm run reset-project
 
 npx expo start
 
+npm run reset-project
+
+npm install nativewind tailwindcss react-native-reanimated react-native-safe-area-context
+
+npx tailwind init
+
+
+npx expo customize metro.config.js
 
 
 
+#tailwind installation Details:
 
+https://www.nativewind.dev/getting-started/installation
 
+npx expo customize metro.config.js
 
 
 
