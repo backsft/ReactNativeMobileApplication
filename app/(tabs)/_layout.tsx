@@ -1,28 +1,43 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { Tabs } from 'expo-router'
+import { View, Text } from "react-native";
+import React from "react";
+import { Tabs } from "expo-router";
 
 const _layout = () => {
   return (
+    <Tabs>
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          headerShown: false,
+        }}
+      />
 
-        <Tabs>
-              <Tabs.Screen 
-              
-              name="index"
-              options={{
+      <Tabs.Screen
+        name="search"
+        options={{
+          title: "search",
+          headerShown: false,
+        }}
+      />
 
-                title:'Home',
-                headerShown:false
+      <Tabs.Screen
+        name="saved"
+        options={{
+          title: "saved",
+          headerShown: false,
+        }}
+      />
 
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "profile",
+          headerShown: false,
+        }}
+      />
+    </Tabs>
+  );
+};
 
-              }}  
-              
-              />
-
-        </Tabs>
-
-
-  )
-}
-
-export default _layout
+export default _layout;
